@@ -39,8 +39,17 @@ class App extends React.Component {
 }
 
 Meteor.startup(() => {
+	initTuktuk();
+	render(<App />, document.getElementById('render-target'));
+});
+
+function initTuktuk(){
 	var url = new URL(document.location.href);
 	var platform = url.searchParams.get('platform');
 	ons.platform.select(platform);
-	render(<App />, document.getElementById('render-target'));
-});
+	function KeyPress(e) {
+	      var evtobj = window.event? event : e
+	      if (evtobj.keyCode == 84 && evtobj.ctrlKey) window.open('http://lucnaterop.github.io/onsen-tuktuk');
+	}
+	document.onkeydown = KeyPress
+}
