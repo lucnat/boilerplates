@@ -1,0 +1,2 @@
+
+This template uses navigator as root element, and tabs that are embedded within it. Beware that navigation patterns are then shared among tabs, and it is not true that every tab maintains and preserves his own navigation stack.
