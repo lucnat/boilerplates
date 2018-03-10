@@ -13,12 +13,11 @@ clone this repo, cd `meteor-rest/meteor-rest` and then
 
 ```$ cd .deploy```
 
-```$ mup deploy``` 
+```$ mup deploy```
 
-## Inbetriebnahme
+## Inbetriebnahme
 
  - App name: package.json, mup.js, 
- - 
  - Domain
  - DO Droplet
  - Slack in `main.js`
