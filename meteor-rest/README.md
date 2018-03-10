@@ -14,4 +14,3 @@ clone this repo, cd `meteor-rest/meteor-rest` and then
 ```$ cd .deploy```
 
 ```$ mup deploy``` 
-
