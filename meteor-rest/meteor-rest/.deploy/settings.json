@@ -1,0 +1,6 @@
+{
+  "public": {
+  	"baseURL": "http://baseurl.ch",
+    "isProduction": true
+  }
+}
