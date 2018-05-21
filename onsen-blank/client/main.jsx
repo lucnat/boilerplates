@@ -15,6 +15,7 @@ Meteor.startup(() => {
 
 // add this to your meteor client
 Meteor.startup(() => { 
+	if(Meteor.isCordova) StatusBar.hide();
 	var url = new URL(document.location.href);
 	var platform = url.searchParams.get('platform');
 	ons.platform.select(platform);
