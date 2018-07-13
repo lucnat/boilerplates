@@ -21,8 +21,8 @@ export default class Router extends React.Component{
           atActive={{ opacity: 1 }}
           className="switch-wrapper"
         >
-          <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={About} />
         </AnimatedSwitch>
       </BrowserRouter>
     );

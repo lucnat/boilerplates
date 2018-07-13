@@ -7,26 +7,14 @@ import * as Ons from 'react-onsenui';
 import 'onsenui/css/onsenui.css';
 import 'onsenui/css/onsen-css-components.css';
 
-export default class About extends React.Component {
+import Toolbar from './Toolbar';
 
-  renderToolbar() {
-    return (
-      <Ons.Toolbar>
-        <div className="center">My App</div>
-        <div className="right">
-          <Ons.ToolbarButton>
-            <Ons.Icon icon='ion-navicon, material:md-menu'></Ons.Icon>
-          </Ons.ToolbarButton>
-        </div>
-      </Ons.Toolbar>
-    );
-  }
+export default class About extends React.Component {
 
   render() {
     return (
-      <Ons.Page renderToolbar={this.renderToolbar.bind(this)} contentStyle={{padding: 10}}>
+      <Ons.Page renderToolbar={() => <Toolbar />} contentStyle={{padding: 10}}>
         <h2>About</h2>
-        <Ons.Button onClick={() => {this.props.history.goBack()}}>Go back</Ons.Button>
       </Ons.Page>
     );
   }
